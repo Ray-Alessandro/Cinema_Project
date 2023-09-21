@@ -1,0 +1,52 @@
+{
+    "peliculas": [
+        {
+            "id": "1",
+            "name": "Guardianes de la Galaxia 2",
+            "photo": "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_.jpg",
+            "duracion":"2h 17m",
+            "genero":"Ciencia ficción",
+            "description": "Guardianes de la Galaxia Vol. 2 es una película de superhéroes estadounidense de 2017 basada en el equipo de superhéroes de Marvel Comics Guardianes de la Galaxia, producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures. Es la secuela de Guardianes de la Galaxia y la decimoquinta película del Universo cinematográfico de Marvel."
+        },
+        {
+            "id": "2",
+            "name": "Shrek",
+            "photo": "https://m.media-amazon.com/images/I/51m1MxSiVUL._AC_UF894,1000_QL80_.jpg",
+            "duracion":"1h 30m",
+            "genero":"Fantasía/Comedia",
+            "description": "Shrek es una película estadounidense de animación por computadora de 2001, dirigida por Andrew Adamson y Vicky Jenson,​ y producida por los estudios DreamWorks. Es la primera película de la saga del mismo nombre, y está basada en el libro infantil Shrek!, de William Steig."
+        },
+        {
+            "id": "3",
+            "name": "Guasón",
+            "photo": "https://cdn.discordapp.com/attachments/1151660063606448158/1154544814398910505/Joker-790658206-mmed.png",
+            "duracion":"2h 2m",
+            "genero":"Drama",
+            "description": "Guasón es una película estadounidense de suspenso psicológico de 2019 dirigida por Todd Phillips, quien coescribió el guion con Scott Silver. La película, basada en el personaje homónimo de DC Comics, está protagonizada por Joaquin Phoenix como el Joker."
+        },
+        {
+            "id": "4",
+            "name": "Oppenheimer",
+            "photo": "https://tragalibros.com/wp-content/uploads/2023/07/full.a082ad.jpg",
+            "duracion":"Drama/Suspenso",
+            "genero":"3 horas",
+            "description": "Oppenheimer es una película estadounidense de drama histórico escrita y dirigida por Christopher Nolan, basada en la vida del físico J. Robert Oppenheimer, quien dirigió el Proyecto Manhattan, el programa de investigación y desarrollo que produjo las primeras armas nucleares durante la Segunda Guerra Mundial."
+        },
+        {
+            "id": "5",
+            "name": "El Padrino",
+            "photo": "https://cdn.discordapp.com/attachments/1151660063606448158/1154248675804069918/75.png",
+            "duracion":"2h 58m",
+            "genero":"Drama/Crimen",
+            "description": "El padrino es una película estadounidense de 1972 dirigida por Francis Ford Coppola. El filme fue producido por Albert S. Ruddy, de la compañía Paramount Pictures. Está basado en la novela homónima de Mario Puzo, quien adaptó el guion junto a Coppola."
+        },
+        {
+            "id": "6",
+            "name": "Las aventuras de Tintín",
+            "photo": "https://img.ecartelera.com/noticias/fotos/8300/8328/1.jpg",
+            "duracion":"1h 47m",
+            "genero":"Aventura/Animación",
+            "description": "Las aventuras de Tintín: El secreto del Unicornio es una película de aventuras estadounidense de 2011 dirigida por Steven Spielberg, producida por Peter Jackson y escrita por Steven Moffat, Edgar Wright y Joe Cornish. Está basada en la serie de cómics Las aventuras de Tintín, escrita por el autor belga Hergé."
+        }
+    ]
+}

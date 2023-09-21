@@ -37,6 +37,23 @@
           }
         }
       }
-    }
+    },
+    {
+      "type": "shell",
+      "label": "Compile C++",
+      "command": "g++",
+      "args": [
+          "-Wall",
+          "-Wextra",
+          "-g3",
+          "mi_programa.cpp",
+          "-o",
+          "mi_programa.exe"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      }
+  }
   ]
 }
