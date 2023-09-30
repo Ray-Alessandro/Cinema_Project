@@ -7,7 +7,7 @@ import { catchError, Observable, retry, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class HttpDataService {
-  base_URL = 'http://localhost:3000/peliculas';
+  base_URL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
@@ -27,14 +27,49 @@ export class HttpDataService {
 
   }
 
-  getList(): Observable<Movie>{
-    return this.http.get<Movie>(this.base_URL)
-    .pipe(retry(2), catchError(this.handleError));
+  // Product CRUD
+
+  getMovie(id : string): Observable<Movie>{
+    return this.http.get<Movie>(this.base_URL + '/peliculas'+ id)
+    .pipe(
+      retry(2),
+      catchError(this.handleError)
+    )
   }
 
-  getItem(id: string): Observable<Movie>{
-    return this.http.get<Movie>(`${this.base_URL}/${id}`)
-    .pipe(retry(2), catchError(this.handleError));
+  getMovies(): Observable<Movie>{
+    return this.http.get<Movie>(this.base_URL + '/peliculas')
+    .pipe(
+      retry(2),
+      catchError(this.handleError)
+    )
+  }
+
+  //Create
+  createMovie(data: Movie): Observable<Movie>{
+    return this.http.post<Movie>(this.base_URL + '/peliculas', JSON.stringify(data), this.httpOptions)
+    .pipe(
+      retry(2),
+      catchError(this.handleError)
+    )
+  }
+
+  //Update
+  updateMovie(id: string, data: Movie): Observable<Movie>{
+    return this.http.put<Movie>(this.base_URL + '/peliculas/' + id, JSON.stringify(data), this.httpOptions)
+    .pipe(
+      retry(2),
+      catchError(this.handleError)
+    )
+  }
+
+  //Delete
+  deleteMovie(id: string){
+    return this.http.delete<Movie>(this.base_URL + '/peliculas/' + id, this.httpOptions)
+    .pipe(
+      retry(2),
+      catchError(this.handleError)
+    )
   }
   
 }

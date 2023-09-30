@@ -9,6 +9,8 @@
     justify-content: center;
     align-items: center;
     margin: 0px auto;
+    margin-bottom: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .center-text {
@@ -56,6 +58,27 @@
     clip-path: inset(20px 60px 20px 60px);
   }
   
+  .buttons-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between; 
+    width: 20%;
+  }
+
+  .button-container p {
+    margin: 0;
+  }
   
   
   

@@ -16,7 +16,7 @@ export class HomeComponent {
 
   ngOnInit() {
     //Se ejecuta cuando se inicia el componente
-    this.httpDataService.getList().subscribe((response: any) => {
+    this.httpDataService.getMovies().subscribe((response: any) => {
       this.peliculas = response;
       console.log(this.peliculas);
     });
@@ -25,10 +25,11 @@ export class HomeComponent {
   currentSlide = 0;
 
   images: string[] = [
+    'https://cdn.discordapp.com/attachments/1151660063606448158/1155983349744156782/BANNER-PREVENTA-saw.png',
     'https://cinemarkla.modyocdn.com/uploads/d67f858b-6217-4205-a294-64e500bcd2a7/original/BANNER-HOME-COMPLEMENTARIOS.png',
-    'https://cinemarkla.modyocdn.com/uploads/a29c8a8d-99a6-48b0-b6b5-08f7a31a073d/original/BANNER-PROMO_N.png',
+    'https://cinemarkla.modyocdn.com/uploads/2d352d79-9f40-40ca-b3bc-a4e27a1fab11/original/BANNER_WEB_TS.png',
     'https://cinemarkla.modyocdn.com/uploads/fd4d9afe-9d2e-4a07-b31f-04fb5b63dedf/original/BANNER-HOME-IU.png',
-    'https://cinemarkla.modyocdn.com/uploads/e39b913b-a24c-434a-b78d-393670e6416e/original/BANNER-cumplea_os.png',
+    'https://cinemarkla.modyocdn.com/uploads/8bae6491-bd3c-4f13-8555-2b9317c10cb1/original/BANNER_WEB_RECARGA_BARRILES_QR.png',
     'https://cdn.discordapp.com/attachments/1151660063606448158/1154484718901940344/362222084_666777205496161_374978095350096886_n.png',
   ];
 
